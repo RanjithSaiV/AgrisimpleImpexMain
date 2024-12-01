@@ -1,0 +1,39 @@
+.my-team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+} 
+ 
+ 
+ 
+ .blog_post a{
+    text-decoration:none;
+    color:inherit ;
+}
+
+.blog_card{
+    max-width:300px;
+    margin:20px;
+    margin-top:40px;
+    box-shadow:0 5px 10px 0 rgba(0,0,0,0.4);
+    transition:0.4s;
+    text-align:center;
+    padding-bottom:20px;
+    outline-style:none;
+}
+
+.blog_card img{
+    width:300px;
+    height:300px;
+}
+.blog_card p,h4{
+    font-size:20px;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.blog_card:hover{
+    transform:scale(1.1) ;
+    box-shadow:0 10px 20px 0 rgba(0,0,0,0.4);
+}
