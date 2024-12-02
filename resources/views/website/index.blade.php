@@ -17,7 +17,7 @@
 	 
 		<!-- End Single Slider -->
 		<!-- Start Single Slider -->
-		<div class="single-slider" style="background-image:url('img/agri-impex/banana/home_banner.jpg')">
+		<div class="single-slider" style="background-image:url('{{ asset('website') }}/img/agri-impex/banana/home_banner.jpg')">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-7">
@@ -25,7 +25,7 @@
 							<h1>Fresh from <span>Our Farms To Your Market</span></h1>
 							<p>Premium-quality <b>Bananas</b>  and <b>Tender Coconuts</b> cultivated with care and delivered globally</p>
 							<div class="button mx-5">
-								<a href="appointment.html" class="btn">Get Appointment</a>
+								<a href="{{url('appointment')}}" class="btn">Get Appointment</a>
 								<!-- <a href="#" class="btn primary">About Us</a> -->
 							</div>
 						</div>
@@ -35,7 +35,7 @@
 		</div>
 		<!-- Start End Slider -->
 		<!-- Start Single Slider -->
-		<div class="single-slider" style="background-image:url('img/coconut_banner.png')">
+		<div class="single-slider" style="background-image:url('{{ asset('website') }}/img/coconut_banner.png')">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-7">
@@ -45,7 +45,7 @@
 							<p style="color: whitesmoke !important;">Premium-quality <b>Bananas</b>  and <b>Tender Coconuts</b> ,
 								cultivated with care and delivered globally</p>
 							<div class="button mx-5">
-								<a href="appointment.html" class="btn">Get Appointment</a>
+								<a href="{{url('appointment')}}" class="btn">Get Appointment</a>
 								<!-- <a href="#" class="btn primary">Conatct Now</a> -->
 							</div>
 						</div>
@@ -77,7 +77,7 @@
 								<p>Rich in flavor and packed with essential nutrients, our Bananas are carefully
 									cultivated to ensure optimal quality and taste. Perfect for healthy snacking or
 									adding to various culinary creations.</p>
-								<a href="bananas.html">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+								{{-- <a href="bananas.html">LEARN MORE<i class="fa fa-long-arrow-right"></i></a> --}}
 							</div>
 						</div>
 					</div>
@@ -97,7 +97,7 @@
 									Sourced from lush farms, each coconut offers a natural boost of electrolytes and
 									vitamins.
 									.</p>
-								<a href="green-coconut.html">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+								{{-- <a href="green-coconut.html">LEARN MORE<i class="fa fa-long-arrow-right"></i></a> --}}
 							</div>
 						</div>
 					</div>
@@ -127,10 +127,10 @@
 			<div class="progress w-75 m-5" style="height: 50px;">
 
 				<div class="progress-bar   "
-					style="width: 80%; position: relative; background:#0459d3">
+					style="width: 85%; position: relative; background:#0459d3">
 					<span class="text-center w-100"
 						style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; color: white;">
-						Fresh 80%
+						Fresh 85%
 					</span>
 				</div>
 			</div>
@@ -233,13 +233,13 @@
 					data-bs-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="{{ asset('website') }}/img/agri-impex/banana/bb.jpg" class="d-block w-100" alt="First slide">
+							<img src="{{asset('website')}}/img/agri-impex/banana/bb.jpg" class="d-block w-100" style="height: 500px;" alt="First slide">
 							<div class="carousel-caption d-none d-md-block">
 								
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img src="{{ asset('website') }}/img/agri-impex/coconut/1.jpg" class="d-block w-100" alt="Second slide">
+							<img src="{{ asset('website') }}/img/agri-impex/coconut/1.jpg" class="d-block w-100" style="height: 500px;" alt="Second slide">
 						</div>
 					</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#carouselDemo"
@@ -275,7 +275,7 @@
 						products without delay!
 					</p>
 					<div class="button">
-						<a href="contact.html" class="btn">Contact Now</a>
+						<a href="{{url('contact')}}" class="btn">Contact Now</a>
 						<a href="https://wa.me/919440754054" target="_blank" class="btn">WhatsApp Now</a>
 						<!-- <a href="#" class="btn second">Learn More<i class="fa fa-long-arrow-right"></i></a> -->
 					</div>
@@ -286,52 +286,6 @@
 </section>
 <!--/ End Call to action -->
 
-<!-- Start portfolio -->
-<!-- <section class="portfolio section">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title">
-					<h2>We Uphold Strict Cleanliness Standards in Our Operations</h2>
-					<img src="{{ asset('website') }}/img/section-img.png" alt="#">
-					<p>We prioritize hygiene and quality at every step, ensuring our Tender coconuts, Fresh
-						coconuts, and Bananas meet the highest cleanliness standards for safe, fresh products.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-12 col-12">
-				<div class="owl-carousel portfolio-slider">
-					<div class="single-pf slideimage">
-						<img class="img-style" src="{{ asset('website') }}/img/agri-impex/banana/1.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf slideimage">
-						<img class="img-style" src="{{ asset('website') }}/img/agri-impex/1.webp" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf slideimage">
-						<img class="img-style" src="{{ asset('website') }}/img/agri-impex/img1.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf slideimage">
-						<img class="img-style" src="{{ asset('website') }}/img/agri-impex/img3.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf slideimage">
-						<img src="{{ asset('website') }}/img/agri-impex/img4.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-
-
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
-<!--/ End portfolio -->
 
 <!-- Start service -->
 <section class="services section">
@@ -353,7 +307,7 @@
 				<!-- Start Single Service -->
 				<div class="single-service">
 					<i class="icofont icofont-shopping-cart"></i>
-					<h4><a href="service-details.html">Sourcing</a></h4>
+					<h4><a href="javascript:void(0)">Sourcing</a></h4>
 					<p>We choose the best Tender coconuts, Fresh coconuts, and Bananas from trusted farmers.
 
 					</p>
@@ -364,7 +318,7 @@
 				<!-- Start Single Service -->
 				<div class="single-service">
 					<i class="icofont icofont-trash"></i>
-					<h4><a href="service-details.html">Cleaning</a></h4>
+					<h4><a href="javascript:void(0)">Cleaning</a></h4>
 					<p>Our products are designed to effectively dispose of dirt and waste, ensuring a thorough
 						cleaning and germ removal.</p>
 				</div>
@@ -374,7 +328,7 @@
 				<!-- Start Single Service -->
 				<div class="single-service">
 					<i class="icofont icofont-check-alt"></i>
-					<h4><a href="service-details.html">Quality Check</a></h4>
+					<h4><a href="javascript:void(0)">Quality Check</a></h4>
 					<p>We check each batch to make sure only the best products are sent out. </p>
 				</div>
 				<!-- End Single Service -->
@@ -383,7 +337,7 @@
 				<!-- Start Single Service -->
 				<div class="single-service">
 					<i class="icofont icofont-package"></i>
-					<h4><a href="service-details.html">Packaging</a></h4>
+					<h4><a href="javascript:void(0)">Packaging</a></h4>
 					<p>We pack our fruits in safe, clean materials to keep them fresh and protect them. </p>
 				</div>
 				<!-- End Single Service -->
@@ -392,7 +346,7 @@
 				<!-- Start Single Service -->
 				<div class="single-service">
 					<i class="icofont icofont-truck"></i>
-					<h4><a href="service-details.html">Transport</a></h4>
+					<h4><a href="javascript:void(0)">Transport</a></h4>
 					<p>Our products are loaded into clean trucks to avoid any damage during delivery.
 
 					</p>
@@ -403,7 +357,7 @@
 				<!-- Start Single Service -->
 				<div class="single-service">
 					<i class="icofont icofont-delivery-time"></i>
-					<h4><a href="service-details.html">Delivery</a></h4>
+					<h4><a href="javascript:void(0)">Delivery</a></h4>
 					<p> make sure to deliver fresh, undamaged products to our customers on time.
 
 					</p>

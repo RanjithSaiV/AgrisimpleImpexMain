@@ -1020,7 +1020,7 @@ body{
 .why-choose .specification{
 	height:100%;
 	width:100%;
-	background-image:url('{{ asset("website") }}/img/agri-impex/banana/5.jpg');
+	background-image:url('{{ asset("website")}}/img/agri-impex/banana/5.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;

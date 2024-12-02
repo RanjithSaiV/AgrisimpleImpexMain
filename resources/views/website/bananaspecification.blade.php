@@ -119,8 +119,8 @@
                     <!-- End Choose Left -->
                 </div>
                 <div class="col-lg-5 col-12">
-                    <!-- Start Choose Rights -->
-                    <div class="specification">
+                    <!-- Start Choose Rights  style="background-image:url('{{ asset('website') }}/img/agri-impex/banana/home_banner.jpg')" -->
+                    <div class="specification" style="background-image:url('{{ asset('website')}}/img/agri-impex/banana/5.jpg')">
                         <div class="video-image">
 
                         </div>
