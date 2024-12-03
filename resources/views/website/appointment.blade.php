@@ -9,7 +9,7 @@
 				<div class="col-lg-12">
 					<div class="section-title">
 						<h2>We Are Always Ready to Assist You. Book an Appointment!</h2>
-						<img src="img/section-img.png" alt="#">
+						<img src="{{ asset('website') }}/img/section-img.png" alt="#">
 						<p>Whether you're a buyer looking for premium coconuts and bananas, a seller wanting to connect
 							with potential customers, or a farmer ready to bring your products to market, we're here to
 							help! At <b>AgriSimpleImpex</b>, we facilitate smooth transactions and ensure everyone gets
@@ -94,7 +94,7 @@
 				</div>
 				<div class="col-lg-6 col-md-12 ">
 					<div class="appointment-image">
-						<img src="img/agri-impex/booking.jpg" alt="#">
+						<img src="{{ asset('website') }}/img/agri-impex/booking.jpg" alt="#">
 					</div>
 				</div>
 			</div>

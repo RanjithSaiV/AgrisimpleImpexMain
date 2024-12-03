@@ -77,7 +77,7 @@
 								<p>Rich in flavor and packed with essential nutrients, our Bananas are carefully
 									cultivated to ensure optimal quality and taste. Perfect for healthy snacking or
 									adding to various culinary creations.</p>
-								{{-- <a href="bananas.html">LEARN MORE<i class="fa fa-long-arrow-right"></i></a> --}}
+								<a href="{{url('banana')}}">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -97,7 +97,7 @@
 									Sourced from lush farms, each coconut offers a natural boost of electrolytes and
 									vitamins.
 									.</p>
-								{{-- <a href="green-coconut.html">LEARN MORE<i class="fa fa-long-arrow-right"></i></a> --}}
+								<a href="{{url('tender-coconut')}}">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>

@@ -1,5 +1,7 @@
 @extends('layouts.website')
 @section('content')
+
+
     <!-- Breadcrumbs -->
     <div class="breadcrumbs overlay">
         <div class="container">
@@ -18,119 +20,199 @@
         </div>
     </div>
     <!-- End Breadcrumbs -->
-    <!-- Single News -->
-    <section class="news-single section">
+    <!-- Start Why choose -->
+    <section class="why-choose section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-7 col-12">
+                    <!-- Start Choose Left -->
+                    <div class="choose-left">
+                        <h3>Grown Naturally Delivered Passionatly</h3>
+                        <p>
+                            We take pride in being genuine exporters of <b>Fresh, Organic Bananas,</b> cultivated and
+                            packed with care to ensure they arrive at your doorstep in perfect condition. Our bananas
+                            are nurtured with passionate attention in a naturally favorable environment, making their
+                            superior quality our hallmark. </p>
+                        <p>
+                            As leading exporters of top-tier fruits, we focus on delivering nutrition and flavor in
+                            every bite. Our commitment to organic farming ensures that all the natural nutrients are
+                            preserved, maintaining the authenticity of our produce. This dedication allows us to provide
+                            only the finest fruits to our customers.
+
+
+
+                        </p>
+                        <p>To ensure peak freshness, we pay special attention to the storage conditions during export.
+                            By carefully regulating the temperature of our packaging, we preserve the taste, texture,
+                            color, and nutritional value of every fruit, delivering nothing short of excellence.
+
+
+
+
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="list">
+                                    <li><i class="fa fa-caret-right"></i>Premium Quality Products. </li>
+                                    <li><i class="fa fa-caret-right"></i>Sustainable Sourcing.</li>
+
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="list">
+                                    <li><i class="fa fa-caret-right"></i>Tailored Packaging Options. </li>
+                                    <li><i class="fa fa-caret-right"></i>Nutritional Guidance.</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Choose Left -->
+                </div>
+                <div class="col-lg-5 col-12">
+                    <!-- Start Choose Rights -->
+                    <div class="choose-right">
+                        <div class="video-image">
+
+                        </div>
+                    </div>
+                    <!-- End Choose Rights -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ End Why choose -->
+    <section class="pricing-table section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-12">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="single-main">
-                                <!-- News Head -->
-                                <div class="news-head">
-                                    <img src="{{ asset('website') }}/img/agri-impex/banana/1.jpg" alt="#">
-                                </div>
-                                <!-- News Title -->
-                                <h1 class="news-title"><a href="news-single.html">Leading Exporter and Supplier of
-                                        High-Quality Bananas from India.</a></h1>
-                                <!-- Meta -->
+                <div class=" choose-left col-lg-12">
+                    <div class="section-title" style="padding:0px">
+                        <h2>BANANA EXPORT</h2>
+                        <img src="img/section-img.png" alt="#">
+                        <div class="row">
+                            <p class="col-6" style="text-align: justify;">India is among the world's largest producers
+                                of bananas, celebrated for their exceptional
+                                quality. Our bananas stand out not only for their appealing size and shape but also for
+                                being some of the most nutritious and flavorful varieties globally. With their vibrant
+                                color
+                                and perfect texture, they truly represent the pinnacle of fruit excellence</p>
 
-                                <!-- News Text -->
-                                <div class="news-text">
-                                    <p>AgriSimpleImpex is a leading exporter and supplier of premium tender coconuts
-                                        from India, catering to the global market with a commitment to quality that
-                                        meets international standards. With extensive farms across Karnataka, Tamil
-                                        Nadu, and Kerala, AgriSimpleImpex has the capacity to provide substantial
-                                        quantities of fresh, natural tender coconuts, maintaining their authentic taste
-                                        by avoiding any chemical processing</p>
-                                    <p>Known for their refreshing properties, tender coconuts are widely enjoyed as a
-                                        natural, hydrating beverage, particularly in hot weather. They are packed with
-                                        essential nutrients, including vitamins B and C, and vital minerals, offering a
-                                        wholesome energy boost throughout the day and serving as an ideal alternative to
-                                        artificial glucose drinks.
-
-                                    </p>
-                                    <div class="image-gallery">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 col-12">
-                                                <div class="single-image">
-                                                    <img src="{{ asset('website') }}/img/agri-impex/banana/2.jpg" style="width: auto;height:350px;object-fit:cover;" alt="#">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-12">
-                                                <div class="single-image">
-                                                    <img src="{{ asset('website') }}/img/agri-impex/banana/3.jpg" style="width: auto;height:350px;object-fit:cover;" alt="#">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p>AgriSimpleImpex’s tender coconuts are nutrient-rich, containing natural sugars,
-                                        fiber, proteins, and antioxidants, making them a beneficial choice for
-                                        health-conscious consumers. Their wholesale supply chain supports local
-                                        suppliers across India, ensuring access to premium quality coconuts at
-                                        competitive prices</p>
-                                    <blockquote class="overlay">
-                                        <p>Rooted in quality, growing with trust – AgriSimpleImpex is committed to
-                                            delivering nature’s best to the world</p>
-                                    </blockquote>
-                                    
-                                </div>
-                               
-                            </div>
+                            <p class="col-6" style="text-align: justify;">India is among the world's largest producers
+                                of bananas, celebrated for their exceptional
+                                quality. Our bananas stand out not only for their appealing size and shape but also for
+                                being some of the most nutritious and flavorful varieties globally. With their vibrant
+                                color
+                                and perfect texture, they truly represent the pinnacle of fruit excellence</p>
                         </div>
-                    
 
-                    </div>
-               
-                </div>
-              
-                <div class="col-lg-4 col-12">
-                    <div class="main-sidebar">
-                        <!-- Single Widget -->
-                        <div class="single-widget search">
-                            <div class="form">
-                                <input type="email" placeholder="Search Here...">
-                                <a class="button" href="#"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                        <!--/ End Single Widget -->
-                        <!-- Single Widget -->
-                        <div class="single-widget category">
-                            <h3 class="title">Our Products</h3>
-                            <ul class="categor-list">
-                                <li><a href="bananas.html">Bananas</a></li>
-                                <li><a href="green-coconut.html">Green Tender Coconut</a></li>
-                                <li><a href="orange-coconut.html">Orange Tender Coconut</a></li>
-                             
-                            </ul>
-                        </div>
-                     
-                        <!-- Single Widget -->
 
-                        <!-- <div class="single-widget recent-post">
-                            <h3 class="title">Recent post</h3>
-                        
-                            <div class="single-post">
-                                <div class="image">
-                                    <img src="{{ asset('website') }}/img/blog-sidebar1.jpg" alt="#">
-                                </div>
-                                <div class="content">
-                                    <h5><a href="#">We have annnocuced our new product.</a></h5>
-                                    <ul class="comment">
-                                        <li><i class="fa fa-calendar" aria-hidden="true"></i>Jan 11, 2020</li>
-                                        <li><i class="fa fa-commenting-o" aria-hidden="true"></i>35</li>
-                                    </ul>
-                                </div>
-                            </div>
-                          
-                        </div> -->
-                        
-                        <!--/ End Single Widget -->
-                       
-                       
+
+
+
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <!-- Single Table -->
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="single-table">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <div class="icon">
+                                <!-- <i class="icofont icofont-ui-cut"></i> -->
+                            </div>
+                            <h4 class="title">PRODUCTION</h4>
+                            <div class="price">
+                                <!-- <p class="amount">$199<span>/ Per Visit</span></p> -->
+                            </div>
+                        </div>
+                        <!-- Table List -->
+                        <ul class="table-list">
+
+                            <li class="">
+                                We employ the most organic and natural methods for planting, nurturing, and ripening
+                                Bananas. Our Farmers are dedicated to ensuring that every step of the Production process
+                                yields the highest quality Bananas from our Farms
+
+                            </li>
+
+                        </ul>
+                        <div class="table-bottom">
+                             <!--<a class="btn" href="/contact.html">Contact US</a> -->
+
+                        </div>
+                        <!-- Table Bottom -->
+                    </div>
+                </div>
+                <!-- End Single Table-->
+                <!-- Single Table -->
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="single-table">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <div class="icon">
+                                <!-- <i class="icofont icofont-tooth"></i> -->
+                            </div>
+                            <h4 class="title">BANANA</h4>
+
+                        </div>
+                        <!-- Table List -->
+                        <ul class="table-list">
+                            <li>Great care is taken during the Post-Harvest
+                                stage to handpick only the finest Bananas. These are selected not only for their
+                                superior Taste but also for their rich Nutritional value, ensuring a wholesome
+                                experience for Consumers</li>
+
+
+                        </ul>
+                        <div class="table-bottom">
+                             <!-- <a class="btn" href="/specification.html">Learn More</a> -->
+
+                        </div>
+                        <!-- Table Bottom -->
+                    </div>
+                </div>
+                <!-- End Single Table-->
+                <!-- Single Table -->
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="single-table">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <div class="icon">
+                                <!-- <i class="icofont-heart-beat"></i> -->
+                            </div>
+                            <h4 class="title">PACKING</h4>
+
+                        </div>
+                        <!-- Table List -->
+                        <ul class="table-list">
+                            <li>
+
+                                Our Packaging Solutions Protect Fruits From Pilferage, Contamination, And Deterioration.
+                                They Ensure Easy Handling, Secure Transport, And Proper Storage For Seamless Delivery
+                                And Market Readiness
+
+
+                            </li>
+
+
+                        </ul>
+                        <div class="table-bottom">
+                            <a class="btn" href="bananaspecification.html">Learn More</a>
+                            <!-- <a class="btn" href="/contact.html">Contact US</a> -->
+                        </div>
+                        <!-- Table Bottom -->
+                    </div>
+                </div>
+                <!-- End Single Table-->
+            </div>
+        </div>
+    </section>
+
+    <section class="news-single section">
+        <div class="container">
+        
             <div class="col-12">
                 <div class="blog-comments">
                     <h2>All Gallery Images</h2>
@@ -162,36 +244,5 @@
             </div>
         </div>
     </section>
-    <!--/ End Single News -->
 
-
-    <!-- Start Newsletter Area -->
-    <section class="newsletter section">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-6  col-12">
-                    <!-- Start Newsletter Form -->
-                    <div class="subscribe-text ">
-                        <h6>Sign up for newsletter</h6>
-                        <p class="">Join our community to receive exclusive insights, market trends, and valuable
-                            information about sourcing and trading</p>
-                    </div>
-                    <!-- End Newsletter Form -->
-                </div>
-                <div class="col-lg-6  col-12">
-                    <!-- Start Newsletter Form -->
-                    <div class="subscribe-form ">
-                        <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-                            <input name="EMAIL" placeholder="Your email address" class="common-input"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
-                                required="" type="email">
-                            <button class="btn">Subscribe</button>
-                        </form>
-                    </div>
-                    <!-- End Newsletter Form -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /End Newsletter Area -->
 @endsection

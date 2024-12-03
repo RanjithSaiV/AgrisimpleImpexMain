@@ -303,7 +303,7 @@
 
                         </ul>
                         <div class="table-bottom">
-                            <a class="btn" href="bananaspecification.html">Lear More</a>
+                            <a class="btn" href="{{url('banana-specification')}}">Lear More</a>
                         </div>
                         <!-- Table Bottom -->
                     </div>
