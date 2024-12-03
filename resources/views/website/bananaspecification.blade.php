@@ -1,7 +1,5 @@
 @extends('layouts.website')
 @section('content')
-
-
     <!-- Breadcrumbs -->
     <div class="breadcrumbs overlay">
         <div class="container">
@@ -39,100 +37,98 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <!-- <ul class="list">
-                                    <li><i class="fa fa-caret-right"></i><span>
+                                                <li><i class="fa fa-caret-right"></i><span>
 
-                                    </span> Packaging
-                                        Corrugated Top Bottom - Premium, Vacuum Bag with foam separators. </li>
-                                    <li><i class="fa fa-caret-right"></i>Sustainable Sourcing.</li>
+                                                </span> Packaging
+                                                    Corrugated Top Bottom - Premium, Vacuum Bag with foam separators. </li>
+                                                <li><i class="fa fa-caret-right"></i>Sustainable Sourcing.</li>
 
-                                </ul> -->
+                                            </ul> -->
 
                                 <ul style="padding-left: 20px; " class="list">
                                     <li style="line-height: 1.8;">
                                         <i class="fa fa-caret-right" "></i>
-                                        <span style=" color: #006400; font-weight: bold; margin-left:
+                                                    <span style=" color: #006400; font-weight: bold; margin-left:
                                             5px;">Packaging:</span>
-                                            <span style="margin-left: 5px;">Corrugated Top Bottom - Premium, Vacuum Bag
-                                                with foam separators.</span>
-                                    </li>
-                                    <li style="line-height: 1.8;">
-                                        <i class="fa fa-caret-right"></i>
-                                        <span style="color: #006400; font-weight: bold; margin-left: 5px;">Marking &
-                                            Labeling:</span>
-                                        <span style="margin-left: 5px;">Includes Product Details, Number of Hands,
-                                            Packing Date, Origin, and Traceability Information.</span>
-                                    </li>
-                                    <li style="line-height: 1.8;">
-                                        <i class="fa fa-caret-right"></i>
-                                        <span style="color: #006400; font-weight: bold; margin-left: 5px;">Gross
-                                            Weight:</span>
-                                        <span style="margin-left: 5px;">14 kg.</span>
-                                    </li>
+                                                        <span style="margin-left: 5px;">Corrugated Top Bottom - Premium, Vacuum Bag
+                                                            with foam separators.</span>
+                                                </li>
+                                                <li style="line-height: 1.8;">
+                                                    <i class="fa fa-caret-right"></i>
+                                                    <span style="color: #006400; font-weight: bold; margin-left: 5px;">Marking &
+                                                        Labeling:</span>
+                                                    <span style="margin-left: 5px;">Includes Product Details, Number of Hands,
+                                                        Packing Date, Origin, and Traceability Information.</span>
+                                                </li>
+                                                <li style="line-height: 1.8;">
+                                                    <i class="fa fa-caret-right"></i>
+                                                    <span style="color: #006400; font-weight: bold; margin-left: 5px;">Gross
+                                                        Weight:</span>
+                                                    <span style="margin-left: 5px;">14 kg.</span>
+                                                </li>
 
-                                    <li style="line-height: 1.8;">
-                                        <i class="fa fa-caret-right"></i>
-                                        <span style="color: #006400; font-weight: bold; margin-left: 5px;">Net
-                                            Weight:</span>
-                                        <span style="margin-left: 5px;">13 kg.</span>
-                                    </li>
+                                                <li style="line-height: 1.8;">
+                                                    <i class="fa fa-caret-right"></i>
+                                                    <span style="color: #006400; font-weight: bold; margin-left: 5px;">Net
+                                                        Weight:</span>
+                                                    <span style="margin-left: 5px;">13 kg.</span>
+                                                </li>
 
-                                </ul>
+                                            </ul>
 
 
 
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <ul class="list">
+                                                <li style="line-height: 1.8;">
+                                                    <i class="fa fa-caret-right"></i>
+                                                    <span
+                                                        style="color: #006400; font-weight: bold; margin-left: 5px;">Recyclable:</span>
+                                                    <span style="margin-left: 5px;">Yes.</span>
+                                                </li>
+                                                <li style="line-height: 1.8;">
+                                                    <i class="fa fa-caret-right"></i>
+                                                    <span style="color: #006400; font-weight: bold; margin-left: 5px;">Units per
+                                                        Carton:</span>
+                                                    <span style="margin-left: 5px;">4 / 5 / 6 / 8 Clusters.</span>
+                                                </li>
+                                                <li style="line-height: 1.8;">
+                                                    <i class="fa fa-caret-right"></i>
+                                                    <span style="color: #006400; font-weight: bold; margin-left: 5px;">Number of
+                                                        Fingers per Hand:</span>
+                                                    <span style="margin-left: 5px;">At Least 12.</span>
+                                                </li>
+                                                <li style="line-height: 1.8;">
+                                                    <i class="fa fa-caret-right"></i>
+                                                    <span
+                                                        style="color: #006400; font-weight: bold; margin-left: 5px;">Calibration:</span>
+                                                    <span style="margin-left: 5px;">39 - 46.</span>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                        <div class="get-quote m-4" style="display:flex;justify-content:center; bottom: 25px;">
+                                            <a href="contact.html" class="btn">Contact Us</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Choose Left -->
                             </div>
-                            <div class="col-lg-6">
-                                <ul class="list">
-                                    <li style="line-height: 1.8;">
-                                        <i class="fa fa-caret-right"></i>
-                                        <span
-                                            style="color: #006400; font-weight: bold; margin-left: 5px;">Recyclable:</span>
-                                        <span style="margin-left: 5px;">Yes.</span>
-                                    </li>
-                                    <li style="line-height: 1.8;">
-                                        <i class="fa fa-caret-right"></i>
-                                        <span style="color: #006400; font-weight: bold; margin-left: 5px;">Units per
-                                            Carton:</span>
-                                        <span style="margin-left: 5px;">4 / 5 / 6 / 8 Clusters.</span>
-                                    </li>
-                                    <li style="line-height: 1.8;">
-                                        <i class="fa fa-caret-right"></i>
-                                        <span style="color: #006400; font-weight: bold; margin-left: 5px;">Number of
-                                            Fingers per Hand:</span>
-                                        <span style="margin-left: 5px;">At Least 12.</span>
-                                    </li>
-                                    <li style="line-height: 1.8;">
-                                        <i class="fa fa-caret-right"></i>
-                                        <span
-                                            style="color: #006400; font-weight: bold; margin-left: 5px;">Calibration:</span>
-                                        <span style="margin-left: 5px;">39 - 46.</span>
-                                    </li>
+                            <div class="col-lg-5 col-12">
+                                <!-- Start Choose Rights  style="background-image:url('{{ asset('website') }}/img/agri-impex/banana/home_banner.jpg')" -->
+                                <div class="specification" style="background-image: url('{{ asset('website') }}/img/agri-impex/banana/2.jpg')">
+                                {{-- <div class="specification" style="background:url('{{ asset('website')}}/img/agri-impex/banana/5.jpg')"> --}}
+                                    <div class="video-image">
+                                        <img src="{{ asset('website') }}/img/agri-impex/banana/5.jpg"
 
-                                </ul>
-
+                                    </div>
+                                </div>
+                                <!-- End Choose Rights -->
                             </div>
-                            <div class="get-quote m-4" style="display:flex;justify-content:center; bottom: 25px;">
-                                <a href="contact.html" class="btn">Contact Us</a>
                             </div>
                         </div>
                     </div>
-                    <!-- End Choose Left -->
-                </div>
-                <div class="col-lg-5 col-12">
-                    <!-- Start Choose Rights  style="background-image:url('{{ asset('website') }}/img/agri-impex/banana/home_banner.jpg')" -->
-                    <div class="specification" style="background-image:url('{{ asset('website')}}/img/agri-impex/banana/5.jpg')">
-                        <div class="video-image">
-
-                        </div>
-                    </div>
-                    <!-- End Choose Rights -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
+                </section>
 @endsection

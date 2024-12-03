@@ -52,16 +52,16 @@
                         <div class="video-image">
                             <!-- Video Animation -->
                             <!-- <div class="promo-video">
-								<div class="waves-block">
-									<div class="waves wave-1"></div>
-									<div class="waves wave-2"></div>
-									<div class="waves wave-3"></div>
-								</div>
-							</div> -->
+            <div class="waves-block">
+             <div class="waves wave-1"></div>
+             <div class="waves wave-2"></div>
+             <div class="waves wave-3"></div>
+            </div>
+           </div> -->
                             <!--/ End Video Animation -->
 
                             <!-- <a href="https://www.youtube.com/watch?v=RFVXy6CRVR4"
-								class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a> -->
+            class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a> -->
                         </div>
                     </div>
                     <!-- End Choose Rights -->
@@ -70,34 +70,50 @@
         </div>
     </section>
     <!--/ End Why choose -->
-    <!-- Start Newsletter Area -->
-    <section class="newsletter section">
+    <section class="news-single section">
         <div class="container">
-            <div class="row ">
-                <div class="col-lg-6  col-12">
-                    <!-- Start Newsletter Form -->
-                    <div class="subscribe-text ">
-                        <h6>Sign up for newsletter</h6>
-                        <p class="">Join our community to receive exclusive insights, market trends, and valuable
-                            information about sourcing and trading</p>
+
+            <div class="col-12">
+                <div class="blog-comments">
+                    <h2>All KYC Images</h2>
+                    <div class="image-gallery">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="single-image">
+                                    <a href="{{ asset('website') }}/img/kyc/1.jpg" target="_blank">
+                                        <img src="{{ asset('website') }}/img/kyc/1.jpg"
+                                            style="width: 300px;height:250px;object-fit:cover;" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="single-image">
+                                    <a href="{{ asset('website') }}/img/kyc/2.jpg" target="_blank">
+                                        <img src="{{ asset('website') }}/img/kyc/2.jpg"
+                                            style="width: 300px;height:250px;object-fit:cover;" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="single-image">
+                                    <a href="{{ asset('website') }}/img/kyc/3.jpg" target="_blank">
+                                        <img src="{{ asset('website') }}/img/kyc/3.jpg"
+                                            style="width: 300px;height:250px;object-fit:cover;" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="single-image">
+                                    <a href="{{ asset('website') }}/img/kyc/4.jpg" target="_blank">
+                                        <img src="{{ asset('website') }}/img/kyc/4.jpg"
+                                            style="width: 300px;height:250px;object-fit:cover;" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- End Newsletter Form -->
-                </div>
-                <div class="col-lg-6  col-12">
-                    <!-- Start Newsletter Form -->
-                    <div class="subscribe-form ">
-                        <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-                            <input name="EMAIL" placeholder="Your email address" class="common-input"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
-                                required="" type="email">
-                            <button class="btn">Subscribe</button>
-                        </form>
-                    </div>
-                    <!-- End Newsletter Form -->
                 </div>
             </div>
         </div>
     </section>
-    <!-- /End Newsletter Area -->
-
 @endsection

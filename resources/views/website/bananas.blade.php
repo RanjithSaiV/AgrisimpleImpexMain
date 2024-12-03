@@ -199,7 +199,7 @@
 
                         </ul>
                         <div class="table-bottom">
-                            <a class="btn" href="bananaspecification.html">Learn More</a>
+                            <a class="btn" href="{{url('banana-specification')}}">Learn More</a>
                             <!-- <a class="btn" href="/contact.html">Contact US</a> -->
                         </div>
                         <!-- Table Bottom -->

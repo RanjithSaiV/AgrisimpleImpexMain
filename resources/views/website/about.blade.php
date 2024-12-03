@@ -186,7 +186,7 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <!-- Start Choose Rights -->
-                    <div class="choose-right">
+                    <div class="choose-right" style="background-image: url('{{asset("website")}}/img/agri-impex/banana/2.jpg')">
                         <div class="video-image">
                             <!-- Video Animation -->
                             <!-- <div class="promo-video">
