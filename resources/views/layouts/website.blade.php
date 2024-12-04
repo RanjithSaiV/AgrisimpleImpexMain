@@ -270,8 +270,8 @@
 						<div class="col-lg-3 col-md-3 col-12">
 							<!-- Start Logo -->
 							<div class="logo">
-								<a href="index.html" style="color: #228b22;">Agri Simple Impex</a>
-								<!-- <a href="index.html"><img src="{{ asset('website') }}/img/agri-impex/agri_logo.png" alt="#"></a> -->
+								{{-- <a href="index.html" style="color: #228b22;">Agri Simple Impex</a> --}}
+								<a href="index.html"><img src="{{ asset('website') }}/img/agri-impex/logo.png" alt="#" style="width:100px"></a> 
 							</div>
 							<!-- End Logo -->
 							<!-- Mobile Nav -->

@@ -192,7 +192,7 @@
 				<!-- Start Choose Left -->
 				<div class="choose-left">
 					<h3>What We Offer</h3>
-					<p>We offer premium <b>Tender Coconuts</b> and <b>Bananas</b> sourced
+					<p>We offer premium <b> Bananas</b> and <b>Tender Coconuts</b> sourced
 						sustainably from
 						trusted farms. Our commitment to freshness and eco-friendly practices ensures you receive
 						products that are both nutritious and beneficial for your well-being.
