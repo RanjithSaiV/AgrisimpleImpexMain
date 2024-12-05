@@ -32,6 +32,10 @@ class PageController extends Controller
     {
         return view('website.bananas');
     }
+    public function gallery()
+    {
+        return view('website.gallery');
+    }
     public function bananaSpecification()
     {
         return view('website.bananaspecification');

@@ -283,15 +283,15 @@
 							<div class="main-menu">
 								<nav class="navigation">
 									<ul class="nav menu">
-										<li class="active"><a href="{{url('/')}}">Home</a>
+										<li class=" {{Request::is('/')? 'active' : ''}}" ><a href="{{url('/')}}">Home</a>
 											<!-- <ul class="dropdown">
 													<li><a href="index.html">About</a></li>
 												</ul> -->
 										</li>
-										<li><a href="#">About Us <i class="icofont-rounded-down"></i></a>
+										<li class="{{Request::is('/about')? 'active' : ''}}" ><a href="#">About Us <i class="icofont-rounded-down"></i></a>
 											<ul class="dropdown">
-												<li><a href="{{url('/about')}} ">About Us</a></li>
-												<li><a href="{{url('/about-kyc')}} ">KYC Details</a></li>
+												<li class=" {{Request::is('about')? 'active' : ''}}" > <a href="{{url('/about')}} ">About Us</a></li>
+												<li class=" {{Request::is('about-kyc')? 'active' : ''}}" ><a href="{{url('/about-kyc')}} ">KYC Details</a></li>
 
 
 											</ul>
@@ -311,8 +311,8 @@
 										
 										<li><a href="#">Specification <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="{{url('banana-specification')}}">Specification</a></li>
-													<li><a href="{{url('banana-specification')}}">Specification</a></li>
+													<li><a href="{{url('banana-specification')}}">Banana </a></li>
+													<li><a href="{{url('banana-specification')}}">Tender Coconut </a></li>
 												</ul>
 											</li> 
 										<!-- <li><a href="#">Blog <i class="icofont-rounded-down"></i></a>
@@ -322,8 +322,8 @@
 										</li> -->
 										<!-- <li><a href="price-details.html">Price List</a></li> -->
 										
-										<li><a href="{{url('/contact')}}">Contact Us </a></li>
-										<li><a href="{{url('gallery')}}">Gallery</a></li>
+										<li class="{{Request::is('contact')? 'active' : ''}} " ><a href="{{url('/contact')}}">Contact Us </a></li>
+										<li class="{{Request::is('gallery')? 'active' : ''}}"><a href="{{url('gallery')}}">Gallery</a></li>
 									</ul>
 								</nav>
 							</div>

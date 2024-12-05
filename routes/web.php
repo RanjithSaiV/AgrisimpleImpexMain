@@ -16,4 +16,5 @@ Route::get('/tender-coconut', [PageController::class, 'tenderCoconut']);
 Route::get('/banana-specification', [PageController::class, 'bananaSpecification']);
 Route::get('/price-list', [PageController::class, 'priceList']);
 Route::get('/appointment', [PageController::class, 'appointment']);
+Route::get('/gallery', [PageController::class, 'gallery']);
 Route::post('/contact-submit', [PageController::class, 'contactForm'])->name('contact-submit');

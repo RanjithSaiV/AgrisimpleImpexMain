@@ -70,50 +70,63 @@
         </div>
     </section>
     <!--/ End Why choose -->
-    <section class="news-single section">
-        <div class="container">
 
-            <div class="col-12">
-                <div class="blog-comments">
-                    <h2>All KYC Images</h2>
-                    <div class="image-gallery">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-4 col-6">
-                                <div class="single-image">
-                                    <a href="{{ asset('website') }}/img/kyc/1.jpg" target="_blank">
-                                        <img src="{{ asset('website') }}/img/kyc/1.jpg"
-                                            style="width: 300px;height:250px;object-fit:cover;" alt="#">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-6">
-                                <div class="single-image">
-                                    <a href="{{ asset('website') }}/img/kyc/2.jpg" target="_blank">
-                                        <img src="{{ asset('website') }}/img/kyc/2.jpg"
-                                            style="width: 300px;height:250px;object-fit:cover;" alt="#">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-6">
-                                <div class="single-image">
-                                    <a href="{{ asset('website') }}/img/kyc/3.jpg" target="_blank">
-                                        <img src="{{ asset('website') }}/img/kyc/3.jpg"
-                                            style="width: 300px;height:250px;object-fit:cover;" alt="#">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-6">
-                                <div class="single-image">
-                                    <a href="{{ asset('website') }}/img/kyc/4.jpg" target="_blank">
-                                        <img src="{{ asset('website') }}/img/kyc/4.jpg"
-                                            style="width: 300px;height:250px;object-fit:cover;" alt="#">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+
+    <section class="my-team">
+        <div class="blog_post">
+            <h2>All KYC Images</h2>
+            <a href="#">
+                <div class="blog_card">
+                    <a href="{{ asset('website') }}/img/kyc/1.jpg" target="_blank">
+                    <img src="{{ asset('website') }}/img/kyc/1.jpg" alt="blog">
+                    </a>
+                    <h5>IEC certifications</h5>
+                    
                 </div>
-            </div>
+            </a>
+
         </div>
+        <div class="blog_post">
+            <a href="#">
+                <div class="blog_card">
+                    <a href="{{ asset('website') }}/img/kyc/2.jpg" target="_blank">
+                    <img src="{{ asset('website') }}/img/kyc/2.jpg" alt="blog">
+                    <h5>Company incorporate certifications</h5>
+                    </a>
+                 
+                   
+                </div>
+            </a>
+
+        </div>
+        <div class="blog_post">
+            <a href="#">
+                <div class="blog_card">
+                    <a href="{{ asset('website') }}/img/kyc/4.jpg" target="_blank">
+                    <img src="{{ asset('website') }}/img/kyc/4.jpg" alt="blog">
+                    </a>
+                    <h5>Udyam Registration certificate</h5>
+                 
+                   
+                </div>
+            </a>
+
+        </div>
+        <div class="blog_post">
+            <a href="#">
+                <div class="blog_card">
+                    <a href="{{ asset('website') }}/img/kyc/3.jpg" target="_blank">
+                    <img src="{{ asset('website') }}/img/kyc/3.jpg" alt="blog">
+                    </a>
+                    <h5>APEDA Membership Certificate</h5>
+                 
+                   
+                </div>
+            </a>
+
+        </div>
+       
+       
     </section>
 @endsection

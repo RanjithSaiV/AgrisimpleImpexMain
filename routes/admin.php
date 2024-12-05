@@ -16,6 +16,7 @@ Route::group(['middleware' => 'admin'], function () {
     // Route::resource('location','LocationController');
     // Route::resource('branch','BranchController');
     Route::resource('patients','PatientController');
+    Route::resource('contacts','PatientController');
     Route::resource('doctors','DoctorController');
     Route::resource('pages','PageController');
     // Route::resource('fuels','FuelController');
@@ -23,5 +24,6 @@ Route::group(['middleware' => 'admin'], function () {
     Route::resource('setting','SettingsController');
     // Route::get('rewards', 'OrderController@rewards')->name('rewards');
     // Route::get('redeemHistory', 'RedeemHistoryController@redeemHistory')->name('rewards');
+    
 
 });
