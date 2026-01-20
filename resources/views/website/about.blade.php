@@ -186,20 +186,21 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <!-- Start Choose Rights -->
-                    <div class="choose-right" style="background-image: url('{{asset("website")}}/img/agri-impex/banana/2.jpg')">
+                    <div class="choose-right"
+                        style="background-image: url('{{asset("website")}}/img/agri-impex/banana/2.jpg')">
                         <div class="video-image">
                             <!-- Video Animation -->
                             <!-- <div class="promo-video">
-								<div class="waves-block">
-									<div class="waves wave-1"></div>
-									<div class="waves wave-2"></div>
-									<div class="waves wave-3"></div>
-								</div>
-							</div> -->
+                                                    <div class="waves-block">
+                                                        <div class="waves wave-1"></div>
+                                                        <div class="waves wave-2"></div>
+                                                        <div class="waves wave-3"></div>
+                                                    </div>
+                                                </div> -->
                             <!--/ End Video Animation -->
 
                             <!-- <a href="https://www.youtube.com/watch?v=RFVXy6CRVR4"
-								class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a> -->
+                                                    class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a> -->
                         </div>
                     </div>
                     <!-- End Choose Rights -->
@@ -212,14 +213,14 @@
     <section class="pricing-table section">
         <div class="container">
             <!-- <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>We Provide You The Best Treatment In Resonable Price</h2>
-                        <img src="{{ asset('website') }}/img/section-img.png" alt="#">
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
-                    </div>
-                </div>
-            </div> -->
+                                    <div class="col-lg-12">
+                                        <div class="section-title">
+                                            <h2>We Provide You The Best Treatment In Resonable Price</h2>
+                                            <img src="{{ asset('website') }}/img/section-img.png" alt="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                                        </div>
+                                    </div>
+                                </div> -->
             <div class="row">
                 <!-- Single Table -->
                 <div class="col-lg-4 col-md-12 col-12">
@@ -314,45 +315,197 @@
     </section>
     <!--/ End Pricing Table -->
 
-    <section class="my-team">
-        <div class="blog_post">
-            <a href="#">
-                <div class="blog_card">
-                    <img src="{{ asset('website') }}/img/agri-impex/pavanray.jpg" alt="blog">
-                    <h1>Pavan Roy</h1>
-                    <hr width="75%">
-                    <h4>CEO!</h4>
-                    <p>With a vision to lead and innovate, Pavan Roy has been steering Agri Simple Impex towards new heights. His dedication to quality and excellence has been instrumental in expanding our operations globally.</p>                    </p>
-                </div>
-            </a>
+    <!-- Start Team -->
+    <style>
+        .premium-team {
+            background-color: #f9f9f9;
+            padding: 80px 0;
+        }
 
+        .team-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 0;
+            display: flex;
+            /* Horizontal layout */
+            flex-direction: row;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s ease;
+            height: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.02);
+            position: relative;
+            overflow: hidden;
+            text-align: left;
+            /* Left align text */
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            /* Vertical strip on left */
+            height: 100%;
+            background: linear-gradient(180deg, #1a76d1, #1a76d1);
+            transform: scaleY(0);
+            transform-origin: bottom;
+            transition: transform 0.4s ease;
+        }
+
+        .team-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .team-img-wrapper {
+            flex: 0 0 35%;
+            /* Fixed width for image */
+            height: 300px;
+            border-radius: 15px 0 0 15px;
+            overflow: hidden;
+            margin: 0;
+            box-shadow: none;
+            /* Remove shadow from image wrapper */
+        }
+
+        .team-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .team-card:hover .team-img-wrapper img {
+            transform: scale(1.05);
+        }
+
+        .team-content {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .team-name {
+            font-size: 26px;
+            font-weight: 700;
+            color: #2c2d3f;
+            margin-bottom: 5px;
+        }
+
+        .team-role {
+            font-size: 14px;
+            color: #1a76d1;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .team-desc {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 0;
+        }
+
+        .team-divider {
+            width: 50px;
+            height: 2px;
+            background: #eee;
+            margin: 0 0 20px 0;
+            /* Left align divider margin */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .team-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .team-img-wrapper {
+                flex: 0 0 auto;
+                width: 100%;
+                height: 350px;
+                border-radius: 15px 15px 0 0;
+            }
+
+            .team-card::before {
+                width: 100%;
+                height: 5px;
+                top: 0;
+                transform: scaleX(0);
+                transform-origin: left;
+            }
+
+            .team-card:hover::before {
+                transform: scaleX(1);
+                transform: scaleY(1);
+                /* Ensure visibility if logic overlaps */
+            }
+
+            .team-divider {
+                margin: 0 auto 20px auto;
+            }
+        }
+    </style>
+
+    <section class="premium-team section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Values-Driven Leadership</h2>
+                        <img src="{{ asset('website') }}/img/section-img.png" alt="#">
+                        <p>Guided by experience, innovation, and unwavering commitment to quality.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- Team Member 1 -->
+                <div class="col-lg-6 col-12 mb-4">
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="{{ asset('website') }}/img/team/pavan.jpeg" alt="Pavan Roy">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-name">Pavan Roy</h3>
+                            <span class="team-role">CEO & Founder</span>
+                            <div class="team-divider"></div>
+                            <p class="team-desc">With a vision to lead and innovate, Pavan Roy has been steering Agri Simple
+                                Impex towards new heights. His dedication to quality and excellence has been instrumental in
+                                expanding our operations globally.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="col-lg-6 col-12 mb-4">
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="{{ asset('website') }}/img/team/mahi.jpeg" alt="Mahendra">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-name">Mahendra</h3>
+                            <span class="team-role">Board Member</span>
+                            <div class="team-divider"></div>
+                            <p class="team-desc">Mahendra brings a wealth of experience and strategic insight to the board.
+                                His commitment to sustainable practices and market growth has been pivotal in our success.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="blog_post">
-            <a href="#">
-                <div class="blog_card">
-                    <img src="{{ asset('website') }}/img/agri-impex/mahi.jpg" alt="blog">
-                    <h1>Mahendra</h1>
-                    <hr width="75%">
-                    <h4>Board Member</h4>
-                    <p>Mahendra brings a wealth of experience and strategic insight to the board. His commitment to sustainable practices and market growth has been pivotal in our success.</p>                    </p>
-                </div>
-            </a>
-
-        </div>
-        <!-- <div class="blog_post">
-            <a href="#">
-                <div class="blog_card">
-                    <img src="https://www.wpblog.com/wp-content/uploads/2018/11/44.jpg" alt="blog">
-                    <h1>Pavan Roy</h1>
-                    <hr width="75%">
-                    <h4>CEO!</h4>
-                    <p>Hey! Lovely geeks over there, This time it's me. Let's jump into world of thoughts through words.
-                    </p>
-                </div>
-            </a>
-
-        </div> -->
     </section>
+    <!--/ End Team -->
 
     <!-- /End Newsletter Area -->
 @endsection
