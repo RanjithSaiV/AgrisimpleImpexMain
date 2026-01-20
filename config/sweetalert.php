@@ -23,7 +23,7 @@ return [
     |
     */
 
-    'cdn' => env('SWEET_ALERT_CDN'),
+    'cdn' => env('SWEET_ALERT_CDN', 'https://cdn.jsdelivr.net/npm/sweetalert2@11'),
 
     /*
     |--------------------------------------------------------------------------
