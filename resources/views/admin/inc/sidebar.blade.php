@@ -85,66 +85,21 @@ if (isset($_COOKIE["sidebar_minimize_state"]) && $_COOKIE["sidebar_minimize_stat
                         </span>
                     </a>
                 </div>
-                {{-- <div class="menu-item">
-
-                    <a href="{{ route('setting.index') }}">
-                        <span class="menu-link">
-                            <span class="menu-icon">
-                                <i class="ki-duotone ki-setting fs-2">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                    <span class="path3"></span>
-                                </i>
-                            </span>
-                            <span class="menu-title">Settings</span>
-                        </span>
-                    </a>
-                </div> --}}
-                {{-- <div class="menu-item">
-
-                    <a href="{{ route('location.index') }}">
-                        <span class="menu-link">
-                            <span class="menu-icon">
-                                <i class="ki-duotone ki-setting fs-2">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                    <span class="path3"></span>
-                                </i>
-                            </span>
-                            <span class="menu-title">Locations</span>
-                        </span>
-                    </a>
-                </div> --}}
                 <div class="menu-item">
-
-                    <a href="{{ route('patients.index') }}">
+                    <a href="{{ route('contacts.index') }}">
                         <span class="menu-link">
                             <span class="menu-icon">
-                                <i class="ki-duotone ki-setting fs-2">
+                                <i class="ki-duotone ki-address-book fs-2">
                                     <span class="path1"></span>
                                     <span class="path2"></span>
                                     <span class="path3"></span>
                                 </i>
                             </span>
-                            <span class="menu-title">Patients</span>
+                            <span class="menu-title">Contacts</span>
                         </span>
                     </a>
                 </div>
-                <div class="menu-item">
-
-                    <a href="{{ route('doctors.index') }}">
-                        <span class="menu-link">
-                            <span class="menu-icon">
-                                <i class="ki-duotone ki-setting fs-2">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                    <span class="path3"></span>
-                                </i>
-                            </span>
-                            <span class="menu-title">Doctos</span>
-                        </span>
-                    </a>
-                </div>
+                <!-- End of Menu Items -->
 
                 
             </div>

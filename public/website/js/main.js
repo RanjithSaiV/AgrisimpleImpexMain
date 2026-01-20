@@ -224,7 +224,7 @@ Version:	1.1
 		/*====================================
 			Nice Select JS
 		======================================*/ 	
-		$('select').niceSelect();
+		$('select:not(.swal2-select)').niceSelect();
 		
 		/*=====================================
 			Date Picker JS

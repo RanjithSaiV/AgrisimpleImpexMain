@@ -4,20 +4,20 @@
 
 <head>
     <base href="../../../" />
-    <title> {{ $site->site_name ??'Agri Simplex' }}</title>
+    <title> {{ $site->site_name ?? 'Agri Simplex' }}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta name="description" content="{{ $site->site_name ?? 'Agri' }}" />
-    <meta name="keywords" content="{{ $site->site_name  ?? 'Agri' }}" />
+    <meta name="keywords" content="{{ $site->site_name ?? 'Agri' }}" />
 
 
     <meta property="og:title" content="{{ $site->site_name ?? 'Agri' }}" />
     <meta property="og:url" content="{{ $site->site_url ?? 'Agri' }}" />
     <meta property="og:site_name" content="{{ $site->site_name ?? 'Agri' }}" />
     <link rel="canonical" href="{{ $site->site_url ?? 'Agri' }}" />
-    <link rel="shortcut icon" href="{{ asset('admin') }}/assets/media/logos/favicon.ico" />
+    <link rel="shortcut icon" href="{{ asset($site->favicon) }}" />
     <!--begin::Fonts(mandatory for all pages)-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <!--end::Fonts-->
@@ -130,7 +130,7 @@
                 data: {
                     email: email
                 },
-                success: function(data) {
+                success: function (data) {
 
                     if (data.success == 0) {
                         $('#emailMessage').html(data.message);
@@ -164,13 +164,13 @@
                     email: email,
                     password: password
                 },
-                success: function(data) {
+                success: function (data) {
 
                     if (data.success == 0) {
                         $('#loginMessage').html(data.message);
                         $('#loginMessage').css("color", "red");
                         $('#password').css("border", "2px solid red");
-                    }else{
+                    } else {
                         window.location.href = '{{url('admin/dashboard')}}';
                     }
                 }

@@ -15,7 +15,7 @@
     <meta property="og:url" content="{{ $site->site_url }}" />
     <meta property="og:site_name" content="{{ $site->site_name }}" />
     <link rel="canonical" href="{{ $site->site_url }}" />
-    <link rel="shortcut icon" href="{{ asset("$site->favicon") }}" />
+    <link rel="shortcut icon" href="{{ $site->favicon ? Storage::url($site->favicon) : '' }}" />
     <!--begin::Fonts(mandatory for all pages)-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <!--end::Fonts-->
@@ -132,8 +132,8 @@
                                 <span class="svg-icon svg-icon-1">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <rect opacity="0.5" x="6" y="17.3137" width="16" height="2"
-                                            rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor" />
+                                        <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1"
+                                            transform="rotate(-45 6 17.3137)" fill="currentColor" />
                                         <rect x="7.41422" y="6" width="16" height="2" rx="1"
                                             transform="rotate(45 7.41422 6)" fill="currentColor" />
                                     </svg>
@@ -147,8 +147,8 @@
                         <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
                             <!--begin::Form-->
 
-                            <form id="kt_modal_add_user_form" class="form" action="{{route('changePassword')}}" method="POST"
-                                enctype="multipart/form-data">
+                            <form id="kt_modal_add_user_form" class="form" action="{{route('changePassword')}}"
+                                method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <!--begin::Scroll-->
                                 <div class="d-flex flex-column scroll-y me-n7 pe-7" id="kt_modal_add_user_scroll"
@@ -196,8 +196,7 @@
                                 <div class="text-center pt-15">
                                     {{-- <button type="reset" class="btn btn-light me-3"
                                         data-kt-users-modal-action="cancel">Discard</button> --}}
-                                    <button type="submit" class="btn btn-primary"
-                                        data-kt-users-modal-action="submit">
+                                    <button type="submit" class="btn btn-primary" data-kt-users-modal-action="submit">
                                         <span class="indicator-label">Submit</span>
                                         <span class="indicator-progress">Please wait...
                                             <span
@@ -214,11 +213,12 @@
                 </div>
                 <!--end::Modal dialog-->
             </div>
-            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <script type="text/javascript"
+                src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
             <script type="text/javascript">
-                $(document).ready(function() {
-                    $('.btn-active-icon-primary').click(function() {
+                $(document).ready(function () {
+                    $('.btn-active-icon-primary').click(function () {
 
                         $('#change_password').modal('hide');
                     });

@@ -60,7 +60,7 @@ class PageController extends Controller
         $data->name = $request->name;
         $data->email = $request->email;
         $data->mobile = $request->mobile;
-        $data->subject= $request->subject;
+        $data->subject = $request->subject;
         $data->mssage = $request->message;
         $data->save();
         Alert::toast('Thank You For Reaching Us', 'success');

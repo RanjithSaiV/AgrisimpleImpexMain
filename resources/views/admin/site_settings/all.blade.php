@@ -35,10 +35,12 @@
                                 }
                             </style>
                             <!--end::Image input placeholder-->
-                            <div class="image-input image-input-empty image-input-outline image-input-placeholder mb-3"
+                            <div class="image-input {{ isset($data->logo) ? '' : 'image-input-empty' }} image-input-outline image-input-placeholder mb-3"
                                 data-kt-image-input="true">
                                 <!--begin::Preview existing avatar-->
-                                <div class="image-input-wrapper w-150px h-150px"></div>
+                                <div class="image-input-wrapper w-150px h-150px"
+                                    style="{{ isset($data->logo) ? 'background-image: url(' . Storage::url($data->logo) . ')' : '' }}">
+                                </div>
                                 <!--end::Preview existing avatar-->
                                 <!--begin::Label-->
                                 <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
@@ -76,13 +78,6 @@
                             <!--begin::Description-->
                             <div class="text-muted fs-7">Set the product thumbnail image. Only *.png, *.jpg and *.jpeg image
                                 files are accepted</div>
-                            @if (isset($data->logo) && file_exists($data->logo))
-                                <div class="pt-2">
-                                    <a href="{{ asset($data->logo) }}" target="_blank">
-                                        <img src="{{ asset($data->logo) }}" alt="" width="50" height="50">
-                                    </a>
-                                </div>
-                            @endif
                             <!--end::Description-->
                         </div>
                         <!--end::Card body-->
@@ -110,10 +105,12 @@
                                 }
                             </style>
                             <!--end::Image input placeholder-->
-                            <div class="image-input image-input-empty image-input-outline image-input-placeholder mb-3"
+                            <div class="image-input {{ isset($data->site_logo) ? '' : 'image-input-empty' }} image-input-outline image-input-placeholder mb-3"
                                 data-kt-image-input="true">
                                 <!--begin::Preview existing avatar-->
-                                <div class="image-input-wrapper w-150px h-150px"></div>
+                                <div class="image-input-wrapper w-150px h-150px"
+                                    style="{{ isset($data->site_logo) ? 'background-image: url(' . Storage::url($data->site_logo) . ')' : '' }}">
+                                </div>
                                 <!--end::Preview existing avatar-->
                                 <!--begin::Label-->
                                 <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
@@ -151,14 +148,6 @@
                             <!--begin::Description-->
                             <div class="text-muted fs-7">Set the product thumbnail image. Only *.png, *.jpg and *.jpeg image
                                 files are accepted</div>
-                            @if (isset($data->site_logo) && file_exists($data->site_logo))
-                                <div class="pt-2">
-                                    <a href="{{ asset($data->site_logo) }}" target="_blank">
-                                        <img src="{{ asset($data->site_logo) }}" alt="" width="50"
-                                            height="50">
-                                    </a>
-                                </div>
-                            @endif
                             <!--end::Description-->
                         </div>
                         <!--end::Card body-->
@@ -185,10 +174,12 @@
                                 }
                             </style>
                             <!--end::Image input placeholder-->
-                            <div class="image-input image-input-empty image-input-outline image-input-placeholder mb-3"
+                            <div class="image-input {{ isset($data->favicon) ? '' : 'image-input-empty' }} image-input-outline image-input-placeholder mb-3"
                                 data-kt-image-input="true">
                                 <!--begin::Preview existing avatar-->
-                                <div class="image-input-wrapper w-150px h-150px"></div>
+                                <div class="image-input-wrapper w-150px h-150px"
+                                    style="{{ isset($data->favicon) ? 'background-image: url(' . Storage::url($data->favicon) . ')' : '' }}">
+                                </div>
                                 <!--end::Preview existing avatar-->
                                 <!--begin::Label-->
                                 <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
@@ -226,15 +217,6 @@
                             <!--begin::Description-->
                             <div class="text-muted fs-7">Set the product thumbnail image. Only *.png, *.jpg and *.jpeg
                                 image files are accepted</div>
-
-                            @if (isset($data->favicon) && file_exists($data->favicon))
-                                <div class="pt-2">
-                                    <a href="{{ asset($data->favicon) }}" target="_blank">
-                                        <img src="{{ asset($data->favicon) }}" alt="" width="50"
-                                            height="50">
-                                    </a>
-                                </div>
-                            @endif
                             <!--end::Description-->
                         </div>
                         <!--end::Card body-->
@@ -297,8 +279,8 @@
                                             <label class="form-label">Short Description</label>
                                             <!--end::Label-->
                                             <!--begin::Input-->
-                                            <input type="text" name="short_description" required
-                                                class="form-control mb-2" placeholder="Site Short Description"
+                                            <input type="text" name="short_description" required class="form-control mb-2"
+                                                placeholder="Site Short Description"
                                                 value="{{ $data->short_description ?? '' }}" />
                                             <!--end::Input-->
                                             <!--begin::Description-->
@@ -312,12 +294,15 @@
                                             <head>
                                                 <meta charset="UTF-8">
                                                 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-                                                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-                                                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+                                                <script
+                                                    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+                                                <script
+                                                    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
                                                 <link
                                                     href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css"
                                                     rel="stylesheet">
-                                                <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
+                                                <script
+                                                    src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
                                             </head>
                                             <!--begin::Input group-->
                                             <!--begin::Label-->
@@ -325,8 +310,8 @@
                                             <!--end::Label-->
                                             <!--begin::Input-->
                                             <textarea id="description" name="description" required>
-                                                    {!! $data->description ?? '' !!}
-                                                </textarea>
+                                                                {!! $data->description ?? '' !!}
+                                                            </textarea>
                                             <!--end::Input-->
                                             <!--start::Script-->
                                             <script>
@@ -393,9 +378,9 @@
                                             <!--end::Description-->
                                         </div>
                                         <!--begin::Card body-->
-                                       
+
                                         <!--begin::Card body-->
-                                      
+
                                         <!--begin::Card body-->
                                         <div class="mb-10 fv-row">
                                             <!--begin::Label-->
@@ -412,34 +397,60 @@
                                         </div>
 
                                         <!--begin::Card body-->
-                                      
-                                        
-                                      
+                                        <div class="mb-10 fv-row">
+                                            <label class="form-label">Facebook</label>
+                                            <input type="text" name="facebook" class="form-control mb-2"
+                                                placeholder="Facebook URL" value="{{ $data->facebook ?? '' }}" />
+                                        </div>
+                                        <div class="mb-10 fv-row">
+                                            <label class="form-label">Instagram</label>
+                                            <input type="text" name="instagram" class="form-control mb-2"
+                                                placeholder="Instagram URL" value="{{ $data->instagram ?? '' }}" />
+                                        </div>
+                                        <div class="mb-10 fv-row">
+                                            <label class="form-label">YouTube</label>
+                                            <input type="text" name="youtube" class="form-control mb-2"
+                                                placeholder="YouTube URL" value="{{ $data->youtube ?? '' }}" />
+                                        </div>
+                                        <div class="mb-10 fv-row">
+                                            <label class="form-label">Twitter</label>
+                                            <input type="text" name="twitter" class="form-control mb-2"
+                                                placeholder="Twitter URL" value="{{ $data->twitter ?? '' }}" />
+                                        </div>
+                                        <div class="mb-10 fv-row">
+                                            <label class="form-label">LinkedIn</label>
+                                            <input type="text" name="linkedin" class="form-control mb-2"
+                                                placeholder="LinkedIn URL" value="{{ $data->linkedin ?? '' }}" />
 
+                                            <!--begin::Card body-->
+
+
+
+
+                                        </div>
+                                        <!--end::Card header-->
                                     </div>
-                                    <!--end::Card header-->
+                                    <!--end::General options-->
                                 </div>
-                                <!--end::General options-->
                             </div>
+                            <!--end::Tab pane-->
+
                         </div>
-                        <!--end::Tab pane-->
+                        <!--end::Tab content-->
+                        <div class="d-flex justify-content-end">
+                            <!--begin::Button-->
 
+                            <!--end::Button-->
+                            <!--begin::Button-->
+                            <button type="submit" id="kt_ecommerce_add_product_submit" class="btn btn-primary">
+                                <span class="indicator-label">Save Changes</span>
+                                <span class="indicator-progress">Please wait...
+                                    <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+                            </button>
+                            <!--end::Button-->
+                        </div>
                     </div>
-                    <!--end::Tab content-->
-                    <div class="d-flex justify-content-end">
-                        <!--begin::Button-->
-
-                        <!--end::Button-->
-                        <!--begin::Button-->
-                        <button type="submit" id="kt_ecommerce_add_product_submit" class="btn btn-primary">
-                            <span class="indicator-label">Save Changes</span>
-                            <span class="indicator-progress">Please wait...
-                                <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-                        </button>
-                        <!--end::Button-->
-                    </div>
-                </div>
-                <!--end::Main column-->
+                    <!--end::Main column-->
             </form>
             <!--end::Form-->
         </div>

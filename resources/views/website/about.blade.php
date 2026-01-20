@@ -191,16 +191,16 @@
                         <div class="video-image">
                             <!-- Video Animation -->
                             <!-- <div class="promo-video">
-                                                    <div class="waves-block">
-                                                        <div class="waves wave-1"></div>
-                                                        <div class="waves wave-2"></div>
-                                                        <div class="waves wave-3"></div>
-                                                    </div>
-                                                </div> -->
+                                                        <div class="waves-block">
+                                                            <div class="waves wave-1"></div>
+                                                            <div class="waves wave-2"></div>
+                                                            <div class="waves wave-3"></div>
+                                                        </div>
+                                                    </div> -->
                             <!--/ End Video Animation -->
 
                             <!-- <a href="https://www.youtube.com/watch?v=RFVXy6CRVR4"
-                                                    class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a> -->
+                                                        class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a> -->
                         </div>
                     </div>
                     <!-- End Choose Rights -->
@@ -210,109 +210,74 @@
     </section>
     <!--/ End Why choose -->
     <!-- Pricing Table -->
-    <section class="pricing-table section">
+    <!-- Features Section -->
+    <section class="features-section section">
         <div class="container">
-            <!-- <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="section-title">
-                                            <h2>We Provide You The Best Treatment In Resonable Price</h2>
-                                            <img src="{{ asset('website') }}/img/section-img.png" alt="#">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
-                                        </div>
-                                    </div>
-                                </div> -->
             <div class="row">
-                <!-- Single Table -->
+                <!-- Single Feature -->
                 <div class="col-lg-4 col-md-12 col-12">
                     <div class="single-table">
                         <!-- Table Head -->
                         <div class="table-head">
                             <div class="icon">
-                                <!-- <i class="icofont icofont-ui-cut"></i> -->
+                                <i class="icofont icofont-building"></i>
                             </div>
                             <h4 class="title">INFRASTRUCTURE</h4>
-                            <div class="price">
-                                <!-- <p class="amount">$199<span>/ Per Visit</span></p> -->
-                            </div>
                         </div>
                         <!-- Table List -->
                         <ul class="table-list">
-                            <li><i class="icofont icofont-ui-check"></i>With the best hygienic circumstances</li>
-                            <li><i class="icofont icofont-ui-check"></i>we run our modern pack house/cold storage
-                                facility for banana</li>
-                            <li class=""><i class="icofont icofont-ui-check"></i>and modern packing facility for banana
-                                in Anantapur (India)</li>
-
+                            <li><i class="icofont icofont-ui-check"></i>Hygienic processing environment</li>
+                            <li><i class="icofont icofont-ui-check"></i>Modern pack house & cold storage</li>
+                            <li><i class="icofont icofont-ui-check"></i>State-of-the-art facility in Anantapur</li>
                         </ul>
-                        <div class="table-bottom">
-                            <!-- <a class="btn" href="/contact.html">Contact US</a> -->
-                        </div>
-                        <!-- Table Bottom -->
                     </div>
                 </div>
-                <!-- End Single Table-->
-                <!-- Single Table -->
+                <!-- End Single Feature-->
+                <!-- Single Feature -->
                 <div class="col-lg-4 col-md-12 col-12">
                     <div class="single-table">
                         <!-- Table Head -->
                         <div class="table-head">
                             <div class="icon">
-                                <!-- <i class="icofont icofont-tooth"></i> -->
+                                <i class="icofont icofont-fruits"></i>
                             </div>
-                            <h4 class="title">BANANA</h4>
-
+                            <h4 class="title">QUALITY PRODUCE</h4>
                         </div>
                         <!-- Table List -->
                         <ul class="table-list">
-                            <li><i class="icofont icofont-ui-check"></i>All of our products from affiliated farmers are
-                                carefully inspected at all growth stages till packaging because we are a
-                                quality-conscious company</li>
-                            <li><i class="icofont icofont-ui-check"></i>necessary, the products can also be tested at
-                                APEDA-recognized laboratories.</li>
-
+                            <li><i class="icofont icofont-ui-check"></i>Rigorous inspection at all growth stages</li>
+                            <li><i class="icofont icofont-ui-check"></i>Quality-conscious sourcing</li>
+                            <li><i class="icofont icofont-ui-check"></i>APEDA-recognized lab testing available</li>
                         </ul>
-                        <div class="table-bottom">
-                            <!-- <a class="btn" href="/contact.html">Contact US</a> -->
-                        </div>
-                        <!-- Table Bottom -->
                     </div>
                 </div>
-                <!-- End Single Table-->
-                <!-- Single Table -->
+                <!-- End Single Feature-->
+                <!-- Single Feature -->
                 <div class="col-lg-4 col-md-12 col-12">
                     <div class="single-table">
                         <!-- Table Head -->
                         <div class="table-head">
                             <div class="icon">
-                                <!-- <i class="icofont-heart-beat"></i> -->
+                                <i class="icofont icofont-package"></i>
                             </div>
-                            <h4 class="title">PACKING</h4>
-
+                            <h4 class="title">PREMIUM PACKING</h4>
                         </div>
                         <!-- Table List -->
                         <ul class="table-list">
-                            <li>
-                                <i class="icofont icofont-ui-check"></i>
-                                Agri Simple Impex Private Limited Export
-                                Packaging is done in accordance with APEDA approved
-                            </li>
-                            <li>
-                                <i class="icofont icofont-ui-check"></i>
-                                packaging facility using hygienic packaging
-                                materials to meet end-user needs for both the domestic and international markets.
-                            </li>
-
+                            <li><i class="icofont icofont-ui-check"></i>APEDA approved export packaging</li>
+                            <li><i class="icofont icofont-ui-check"></i>Hygienic materials for safety</li>
+                            <li><i class="icofont icofont-ui-check"></i>Meeting global & domestic standards</li>
                         </ul>
                         <div class="table-bottom">
-                            <a class="btn" href="{{url('banana-specification')}}">Lear More</a>
+                            <a class="btn" href="{{url('banana-specification')}}">Learn More</a>
                         </div>
-                        <!-- Table Bottom -->
                     </div>
                 </div>
-                <!-- End Single Table-->
+                <!-- End Single Feature-->
             </div>
         </div>
     </section>
+    <!--/ End Features Section -->
     <!--/ End Pricing Table -->
 
     <!-- Start Team -->

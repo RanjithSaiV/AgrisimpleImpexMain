@@ -14,7 +14,8 @@
 	<title>Agrisimpleimpex.</title>
 
 	<!-- Favicon -->
-	<link rel="icon" href="{{ asset('website') }}/img/agri-impex/logo.png">
+	<link rel="icon"
+		href="{{ $site->favicon ? Storage::url($site->favicon) : asset('website/img/agri-impex/logo.png') }}">
 
 	<!-- Google Fonts -->
 	<link
@@ -232,9 +233,9 @@
 					<div class="row">
 						<div class="col-lg-6 col-md-5 col-12">
 							<!-- Contact -->
-							<div class="get-quote">
+							{{-- <div class="get-quote">
 								<a href="appointment.html" class="btn">Book Appointment</a>
-							</div>
+							</div> --}}
 							<ul class="top-link">
 								<!-- <li><a href="#">About</a></li>
 							<li><a href="#">Doctors</a></li>
@@ -251,12 +252,13 @@
 							<!-- Top Contact -->
 
 							<ul class="top-contact">
-								<li><i class="fa fa-phone"></i> <a href="tel:+919676669694">+91 967667974</a> </li>
-								<li><i class="fa fa-envelope"></i><a
-										href="mailto:enquir@agrisimpleimpex.com">enquir@agrisimpleimpex.com</a>
-									<br>
+								<li><i class="fa fa-phone"></i> <a
+										href="tel:{{ $site->phone ?? '' }}">{{ $site->phone ?? '+91' }}</a> </li>
+								<li><i class="fa fa-envelope"></i><a href="mailto:{{ $site->email ?? '' }}">{{
+										$site->email ?? 'info@agrisimpleimpex.com' }}</a>
+									{{-- <br>
 									<i class="fa fa-envelope"></i><a
-										href="mailto:pavanroy901@gmail.com">pavanroy901@gmail.com</a>
+										href="mailto:pavanroy901@gmail.com">pavanroy901@gmail.com</a> --}}
 								</li>
 								</li>
 							</ul>
@@ -275,7 +277,8 @@
 								<!-- Start Logo -->
 								<div class="logo">
 									{{-- <a href="index.html" style="color: #228b22;">Agri Simple Impex</a> --}}
-									<a href="index.html"><img src="{{ asset('website') }}/img/agri-impex/logo.png"
+									<a href="{{ url('/') }}"><img
+											src="{{ $site->site_logo ? Storage::url($site->site_logo) : asset('website/img/agri-impex/logo.png') }}"
 											alt="#" style="width:100px"></a>
 								</div>
 								<!-- End Logo -->
@@ -294,8 +297,8 @@
 													<li><a href="index.html">About</a></li>
 												</ul> -->
 											</li>
-											<li class="{{Request::is('/about') ? 'active' : ''}}"><a href="#">About Us <i
-														class="icofont-rounded-down"></i></a>
+											<li class="{{Request::is('/about') ? 'active' : ''}}"><a href="#">About Us
+													<i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
 													<li class=" {{Request::is('about') ? 'active' : ''}}"> <a
 															href="{{url('/about')}} ">About Us</a></li>
@@ -388,17 +391,34 @@
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>About Us</h2>
-								<p>Agri Simple Impex Private limited increased operations
+								<p>
+									{{ $site->short_description ?? '' }}
+									{{-- Agri Simple Impex Private limited increased operations
 									begining in 2024 and <b>Expanding to GULF countries </b>. We are supplying quality
 									Coconuts and
-									Bananas to both the domestic market and a major supermarket chain in India.
+									Bananas to both the domestic market and a major supermarket chain in India. --}}
 
 
 								</p>
 								<!-- Social -->
 								<ul class="social">
-									<li><a href="#"><i class="icofont-facebook"></i></a></li>
-									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									@if(isset($site->facebook))
+										<li><a href="{{ $site->facebook }}"><i class="icofont-facebook"></i></a></li>
+									@endif
+									@if(isset($site->instagram))
+										<li><a href="{{ $site->instagram }}"><i class="icofont-instagram"></i></a></li>
+									@endif
+									@if(isset($site->twitter))
+										<li><a href="{{ $site->twitter }}"><i class="icofont-twitter"></i></a></li>
+									@endif
+									@if(isset($site->linkedin))
+										<li><a href="{{ $site->linkedin }}"><i class="icofont-linkedin"></i></a></li>
+									@endif
+									@if(isset($site->youtube))
+										<li><a href="{{ $site->youtube }}"><i class="icofont-youtube"></i></a></li>
+									@endif
+
+									{{-- <li><a href="#"><i class="icofont-google-plus"></i></a></li> --}}
 
 								</ul>
 								<!-- End Social -->
@@ -410,15 +430,15 @@
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-12">
 										<ul>
-											<li><a href="index.html">Home</a>
+											<li><a href="{{ url('/') }}">Home</a>
 											</li>
-											<li><a href="about.html">About Us</a>
+											<li><a href="{{ url('about') }}">About Us</a>
 											</li>
 											<li>
 
 											</li>
 											<!-- <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Appointment</a></li> -->
-											<li><a href="appointment.html"></i>Appointment</a></li>
+											<li><a href="{{ url('contact') }}"></i>Contact Us</a></li>
 
 										</ul>
 									</div>
@@ -430,8 +450,8 @@
 							<div class="single-footer">
 								<h2>Products</h2>
 								<ul class="time-sidual">
-									<li class="day"> <a href="bananas.html">Bananas</a></li>
-									<li class="day"> <a href="green-coconun.html">Tender Coconut</a></li>
+									<li class="day"> <a href="{{ url('banana') }}">Bananas</a></li>
+									<li class="day"> <a href="{{ url('tender-coconut') }}">Tender Coconut</a></li>
 
 
 								</ul>
@@ -440,8 +460,7 @@
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>Newsletter</h2>
-								<p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit
-									amet, consectetur adipisicing elit,</p>
+								<p>subscribe to our newsletter to get allour news in your inbox.. </p>
 								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
 									<input name="email" placeholder="Email Address" class="common-input"
 										onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
@@ -460,7 +479,8 @@
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-12">
 							<div class="copyright-content">
-								<p>© Copyright 2024 | All Rights Reserved by <a href="" target="_blank">Ranjith</a> </p>
+								<p>© Copyright {{ date('Y') }} | All Rights Reserved by <a href=""
+										target="_blank">{{ $site->site_name ?? 'Agri Simple Impex' }}</a> </p>
 							</div>
 						</div>
 					</div>

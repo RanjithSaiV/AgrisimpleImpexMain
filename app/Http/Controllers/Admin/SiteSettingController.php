@@ -38,7 +38,7 @@ class SiteSettingController extends Controller
     public function edit($id)
     {
         $data = SiteSetting::find($id);
-        return view('admin.site_settings.all',compact('data'));
+        return view('admin.site_settings.all', compact('data'));
     }
 
 
@@ -52,29 +52,24 @@ class SiteSettingController extends Controller
         $site = $site->fill($request->input());
         // dd($site);
 
-        if($request->hasFile('logo'))
-        {
-            $site->logo = $request->logo->store('site');
+        if ($request->hasFile('logo')) {
+            $site->logo = $request->logo->store('site', 'public');
         }
-        if($request->hasFile('site_logo'))
-        {
-            $site->site_logo = $request->site_logo->store('site');
+        if ($request->hasFile('site_logo')) {
+            $site->site_logo = $request->site_logo->store('site', 'public');
         }
-        if($request->hasFile('favicon'))
-        {
-            $site->favicon = $request->favicon->store('site');
+        if ($request->hasFile('favicon')) {
+            $site->favicon = $request->favicon->store('site', 'public');
         }
-        if($request->hasFile('admin_logo'))
-        {
-            $site->admin_logo = $request->admin_logo->store('site');
+        if ($request->hasFile('admin_logo')) {
+            $site->admin_logo = $request->admin_logo->store('site', 'public');
         }
-        if($request->hasFile('image'))
-        {
-            $site->image = $request->image->store('site');
+        if ($request->hasFile('image')) {
+            $site->image = $request->image->store('site', 'public');
         }
 
         $site->save();
-        Alert::success('Updated','Successfully');
+        Alert::success('Updated', 'Successfully');
         return redirect()->back();
 
     }
